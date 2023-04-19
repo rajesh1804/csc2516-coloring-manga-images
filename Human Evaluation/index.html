@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Classifier</title>
+</head>
+<body>
+	<h1>Image Classifier</h1>
+	
+	<form method="POST">
+		<table>
+			{% for image in images %}
+			<tr>
+				<td><img src="{{ image }}"></td>
+				<td>
+					<input type="checkbox" name="real_images" value="{{image}}"> Real<br>
+					<input type="checkbox" name="fake_images" value="{{image}}"> Fake<br>
+					<input type="hidden" name="image_name" value="{{ image }}">
+				</td>
+			</tr>
+			{% endfor %}
+            
+
+		</table>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Real Images:</h2>
+	{% for image in real_images %}
+	<img src="{{ image }}"><br>
+	{% endfor %}
+
+	<h2>Fake Images:</h2>
+	{% for image in fake_images %}
+	<img src="{{ image }}"><br>
+	{% endfor %}
+
+</body>
+</html>

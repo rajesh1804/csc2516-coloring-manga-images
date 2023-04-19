@@ -1,0 +1,27 @@
+# For Generating the results for Pix2Pix GAN:
+
+Training:
+
+python3 train.py --dataroot ./datasets/manga_5000  --name manga_pix2pix --model pix2pix --display_id -1 --n_epochs 10 --n_epochs_decay 0 --gpu_ids -1
+
+Testing:
+
+python3 test.py --dataroot ./datasets/manga_5000 --model pix2pix --name manga_pix2pix_20 --num_test 5000 --gpu_ids -1
+
+#  For Generating the results for Cycle-GAN:
+
+Follow the notbook manga_CycleGAN.ipynb
+
+#  For Generating the results for InstructPix2Pix Diffuion Model:
+
+Follow the notbook manga_CycleGAN.ipynb
+
+# For Automatic Evaluation:
+
+Run Metrics/eval.py after placing the generated and real images in the appropriate folders.
+
+# For Human Evaluation:
+
+Run the server.py inside the Human Evaluation folder
+Collect the results from all the human evaluators
+Run Metrics/human_eval.py after inserting those results.

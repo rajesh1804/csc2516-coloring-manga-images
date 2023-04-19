@@ -1,0 +1,5 @@
+compute FID between two folders
+Found 5 images in the folder grayscale
+Found 5 images in the folder color
+FID: 106.46574063983192
+IS: 1.5015968446403325 0.0

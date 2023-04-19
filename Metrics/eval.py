@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     print("Diffusion : ")
 
-    diff_folder = "/Users/naveenthangavelu/Documents/MScAC/Neural networks and Deep Learning/Project/Metrics/diff_test_resized"
+    diff_folder = "/diff_test_resized"
 
     fid_score = fid.compute_fid(root_folder + real_B, diff_folder, device='cpu', num_workers=0)
     print('FID: {}'.format(fid_score))

@@ -8,7 +8,7 @@ Refer to this [readme.md](cycleGAN_and_pix2pix/README.md) file in the  **cycleGA
 
 ## Instructpix2pix
 
-Refer to this [readme.md](instructpix2pix/README.md) file in the  **instructpix2pix** directory for details on how to reproduce the results.
+Refer to this [readme.md](instructpix2pix/readme.MD) file in the  **instructpix2pix** directory for details on how to reproduce the results.
 
 ## Metrics Generation
 

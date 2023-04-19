@@ -13,3 +13,14 @@ Refer to this [readme.md](instructpix2pix/readme.MD) file in the  **instructpix2
 ## Metrics Generation
 
 Run `eval.py` under the **Metrics** folder to generate SSIM and FID scores for all the models.
+
+
+## Dataset
+
+[Anime Names and Images Dataset](https://www.kaggle.com/datasets/shanmukh05/anime-names-and-image-generation) from Kaggle : Contains over 58000 anime characters RGB portrait images.
+
+
+### Contributions
+> - Rajesh = InstructPix2Pix
+> - Naveen = Pix2Pix GANs
+> - Gurman = CycleGANs
